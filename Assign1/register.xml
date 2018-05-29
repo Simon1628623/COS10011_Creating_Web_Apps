@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<!--
+Filename: surveyhome.html
+Author: Simon 
+Date Created: 29 March 2015
+Last Modified: 7th April 2015
+Purpose: TO register for user agents
+
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="description" content="survey"/>
+	<meta name="author" content="Simon"/>
+	
+	<!-- for icons on tab bar-->
+	<!--<link rel="icon" href="">-->
+    <!-- for tab bar-->
+	<title>Register</title>
+
+    <!-- CSS -->
+   <link rel="stylesheet" type="text/css" href="css/mystyle.css"/>
+	
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+	
+  </head>
+  <body>
+  
+	 <!-- Container for body -->
+    <div class="container">
+        <div id="banner"></div>
+		<!--navigation-->
+		<nav>
+          	<a class="btn01" href="index.html"></a>
+			<a class="btn02" href="useragents.html"></a>
+			<a class="btn03" href="about.html"></a>
+			<a class="btn04" href="register.html"></a>
+		</nav>
+		<!-- end of navigation-->
+
+		<!-- MAIN BODY -->
+	   <div class="body">
+			<h1>
+			Survey
+			</h1>
+			
+			<p class="bodyTxt">Register for this Program. </p>
+		
+	   
+			<form action="http://mercury.ict.swin.edu.au/it000000/surveytest.php" method="POST">
+				<p>
+					Topic name:
+					<input type="text" name="topic" required="required"/>
+				</p>
+				<div>
+					<!-- text boxes-->
+					<h2> Contact Details </h2>
+					First name:
+					<input type="text" name="firstname" required="required"/>
+					<br/>
+					Last name:
+					<input type="text" name="lastname" required="required"/>
+					<br/>
+					Phone Number:
+					<input type="text" name="phone" required="required"/>
+					<br/>
+					<!-- email uses special email type to make sure it ias inputted correctly-->
+					E-mail:
+					<input type="email" name="email" required="required"/>
+				</div>
+				<div>
+					<h2> Address </h2>
+					Street number:
+					<input type="number" name="streetnumber" required="required"/>
+					<br/>
+					Street Name:
+					<input type="text" name="streetname" required="required"/>
+					<br/>
+					Suburb:
+					<input type="text" name="suburb" required="required"/>
+					<br/>
+					<!-- drop down box-->
+					State: 
+					<select name="state" required="required">
+						
+						<option value="" selected="selected">Select</option>
+						<option value="Victoria">Vic</option>
+						<option value="New South Wales">NSW</option>
+						<option value="Queensland">QLD</option>
+						<option value="Northern Territory">NT</option>
+						<option value="South Australia">SA</option>
+						<option value="Western Australia">WA</option>
+						<option value="Tasmania">TAS</option>
+						<option value="Australia Capital Territory">ACT</option>
+					</select>
+					<br/>
+					<!-- number anywhere between 0 and 9999 for postcode-->
+					Postcode:
+					<input type="number" name="quantity" min="0000" max="9999" required="required"/>
+				</div>
+				
+				<div>
+					<h2> Other Details </h2>
+					<!-- type passwrod hides text from view-->
+					User password:
+					<input type="password" name="psw" required="required"/>
+				</div>
+				<p>
+					<!-- able to select dates from a calender-->
+					Birthday:
+					<input type="date" name="bday" required="required"/>
+				</p>
+				<p>
+					<br/>
+					Gender
+					<br/>
+					<!-- option circles to pick one or the other-->
+					<input type="radio" name="sex" value="male" required="required"/>Male
+					<br/>
+					<input type="radio" name="sex" value="female" required="required"/>Female
+				</p>
+				<p>
+					Select a date for an interview:
+					<input type="time" name="usr_time" required="required"/>
+				</p>
+				<div>
+					<h2> Interest </h2>
+					How many years have you been interested in User Agents?(between 1 and 10):
+					<input type="number" name="quantity" min="1" max="10"/>
+				</div>
+				
+				<p>
+					How did you find out about this program? <br/>
+					<input type="radio" name="main" value="find" />
+					
+					
+					<select name="find">
+						<option value="email">Email</option>
+						<option value="wom">Word of mouth</option>
+						<option value="ad">Advertisement</option>
+						<option value="tv">TV</option>
+						<option value="Internet">Internet</option>
+					</select>
+					<input type="radio" name="other" value="other"/>
+					Other: 
+					<input type="text" name="other"/>
+				</p>
+				<p>
+					<textarea name="message" rows="10" cols="30">
+						why are you interested in this?
+					</textarea>
+				</p>
+				<p>
+					I agree to the <a href="">Terms and Conditions:</a>
+					<input type="checkbox" name="Terms" value="Terms" required="required"/>
+					<br/>
+					I wish to be subscribed to the email list:
+					<input type="checkbox" name="maillist" value="maillist"/> 
+				</p>
+				<input type="reset" value="Reset" />
+				<input type="submit" value="Submit"/>
+			</form>
+	   </div>
+	 </div>
+   <!-- FOOTER -->
+      <footer>
+      <p> 	&#169; 2014 Simon, Inc.  <a href="mailto:1628623@student.swin.edu.au" target="_top">Send Mail</a> <a href="#banner">Return to top</a></p>
+      </footer>
+    
+  </body>
+</html>

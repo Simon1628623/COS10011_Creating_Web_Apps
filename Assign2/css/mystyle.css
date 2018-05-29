@@ -1,0 +1,317 @@
+/*
+Author: Simon Dunkley
+File: mystyle.css
+Purpose: style sheet for user agent website
+Created: 29th March 2015
+Last Edited: 7th April 2015
+
+*/
+
+
+body {
+	/* sets font color to white*/
+    color: white; 
+	/* sets font to sans serif*/
+	font-family:sans-serif; 
+	background-image:url(../images/background.jpg);
+	/* background will continue repeating image*/
+	background-repeat: repeat;
+    /* placing background 25% in and 50% down on page*/
+	background-position: 25% 50%;
+	
+	/* aligning the body to the centre*/
+	margin-left: auto;
+    margin-right: auto;
+	/* aligning the text to the centre*/
+    text-align:center;
+   
+}
+
+
+h1 {
+    color: orange;
+    text-align: center;
+}
+
+h2 {
+    color: orange;
+    text-align: center;
+}
+
+p {
+    color: white; 
+	font-family:sans-serif; 
+	font-size: 25px; 
+	/* making font bold*/
+	font-weight:bold;
+}
+
+
+/* contains all other div components*/
+#container {
+	color:white;
+	background-color: rgba(0,0,0,0.5);
+
+	text-align:center;
+	width: 1000px;
+
+	/* aligning in the cntre of the page*/
+	margin: auto;
+}
+
+/* banner at top of page*/
+#banner {
+	width:1000px;
+	height:110px;
+	background-image:url(../images/banner1.png);
+	
+	margin-left: auto;
+    margin-right: auto;
+	
+}
+
+
+/* navigation bar under banner on every page*/
+nav {
+	width:1000px;
+	height:100px;
+	margin: auto;
+}
+
+/* text body for paragraphs*/
+.bodyTxt {
+font-size: 22px;
+
+}
+
+/*text under images */
+aside{
+font-size:12px;
+color:white;
+font-family:"courier", Georgia, Serif;
+
+}
+
+article{
+font-size: 20px;
+}
+
+p{
+padding: 4px;
+
+}
+
+div{
+line-height: 200%;
+}
+
+/*unvisited and active lniks show as */
+a:link, a:active {
+color:white;
+}
+
+/* hover and visited links show as */
+a:hover, a:visited {
+color:gray;
+}
+
+/* for flexible use for left/right content on index*/
+.flexbox-container {
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+}
+
+/* content aligned to the left on index*/
+.leftContent {
+position:inherit;
+margin: 0px 0px 50px 0px;
+padding:0px;
+float: left;
+max-width: 500px;
+width:auto;
+}
+
+/* content aligned to the right on index*/
+.rightContent {
+position:inherit;
+margin: 0px 0px 50px 0px;
+padding:50px;
+float: right;
+max-width: 500px;
+width:auto;
+}
+
+.content {
+position:inherit;
+margin: 0px 0px 50px 0px;
+padding:0px;
+
+max-width: 1000px;
+width:auto;
+ margin-left: auto;
+    margin-right: auto;
+}
+
+/* button one aka home for navigation */
+.btn01 {
+	display:block;
+	width:250px;
+	height:100px;
+	float:left;
+	
+}
+
+a.btn01:link {
+	background-image:url(../images/btn_01_link.png);
+}
+a.btn01:visited {
+	background-image:url(../images/btn_01_link.png);
+}
+a.btn01:hover {
+	background-image:url(../images/btn_01_hover.png);
+}
+a.btn01:active {
+	background-image:url(../images/btn_01_active.png);
+}
+
+/* button two aka user agents for navigation */	
+.btn02 {
+	display:block;
+	width:250px;
+	height:100px;
+	float:left;
+}
+
+a.btn02:link {
+	background-image:url(../images/btn_02_link.png);
+}
+a.btn02:visited {
+	background-image:url(../images/btn_02_link.png);
+}
+a.btn02:hover {
+	background-image:url(../images/btn_02_hover.png);
+}
+a.btn02:active {
+	background-image:url(../images/btn_02_active.png);
+}
+
+/* button three aka about for navigation */
+.btn03 {
+	display:block;
+	width:250px;
+	height:100px;
+	float:left;
+}
+
+a.btn03:link {
+	background-image:url(../images/btn_03_link.png);
+}
+a.btn03:visited {
+	background-image:url(../images/btn_03_link.png);
+}
+a.btn03:hover {
+	background-image:url(../images/btn_03_hover.png);
+}
+a.btn03:active {
+	background-image:url(../images/btn_03_active.png);
+}
+
+/* button four aka Register for navigation */
+.btn04 {
+	display:block;
+	width:250px;
+	height:100px;
+	float:left;
+}
+
+a.btn04:link {
+	background-image:url(../images/btn_04_link.png);
+}
+a.btn04:visited {
+	background-image:url(../images/btn_04_link.png);
+}
+a.btn04:hover {
+	background-image:url(../images/btn_04_hover.png);
+}
+a.btn04:active {
+	background-image:url(../images/btn_04_active.png);
+}
+
+
+/* name paragraph for about page*/
+p#name {
+text-align: center;
+font-weight: bold;
+color: lightblue;
+}
+
+/* student id paragraph for about page*/
+p#sid {
+
+text-align: right;
+font-family: "Arial";
+color: #7CFC00;
+}
+
+/* course name paragraph for about page*/
+p#course {
+text-align: left;
+color: orange;
+}
+
+/* photo image for about page*/
+img#photo {
+position: absolute;
+left: 0px;
+
+border-style: dashed;
+
+width:500px;
+height:300px;
+
+padding: 30px;
+margin: 20px;
+}
+
+p#img {
+position: absolute;
+left: 0px;
+text-align:right;
+
+}
+
+/* timetable table for about page*/
+table#tt {
+
+color:white;
+
+margin-left:auto; 
+margin-right:auto;
+
+}
+
+
+/* timetable table for about page*/
+table, td, th{
+border: 1px solid white;
+text-align:center;
+}
+
+/* timetable table for about page*/
+th {
+font-weight: bold;
+}
+
+
+ul{
+/* removes bullets*/
+list-style-type:none;
+}
+
+/* every first letter of all the paragraphs will be enlarged*/
+p::first-letter {
+    
+    font-size: xx-large;
+}
+
